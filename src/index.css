@@ -1,0 +1,130 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: #ffffff;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #ff0000;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.button, .back-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #ff0000;
+  color: #ffffff;
+  transition: background 0.3s;
+}
+
+.button:hover, .back-button:hover {
+  background: #cc0000;
+}
+
+.card {
+  padding: 30px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #2a2a2a;
+}
+
+.main-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+  margin-top: 20px;
+}
+
+p {
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.horizontal-images {
+  margin-top: 20px;
+
+
+  gap: 10px;
+
+}
+
+.horizontal-images img.thumb {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #ff0000;
+  transition: transform 0.2s;
+}
+
+.horizontal-images img.thumb:hover {
+  transform: scale(1.1);
+}
+.imagem-relacionada {
+  border: 2px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.imagem-relacionada:hover {
+  transform: scale(1.02);
+}
+
+.modal-img {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-img.show {
+  display: flex;
+}
+
+.modal-img img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+}
